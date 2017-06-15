@@ -7,4 +7,43 @@ h1 {
   font-size: 2.4em;
   color: red;
   text-align: center;
+  animation-name: stages3;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform: rotate(30deg);
+/*
+        -webkit-animation: KEYFRAME-NAME 5s infinite;
+        -moz-animation:    KEYFRAME-NAME 5s infinite;
+        -o-animation:      KEYFRAME-NAME 5s infinite;
+        animation:         KEYFRAME-NAME 5s infinite;
+*/
 }
+
+@keyframes stages3 {
+    0% {
+        font-size: 2.4em;
+        color: red;
+        transform: rotate(60deg);
+        transform: translateY(200px);
+    }
+    
+    50% {
+        font-size: 3.4em;
+        color: orange;
+        transform: rotate(100deg);
+        transform: scale(2);
+    }
+    
+    75% {
+        font-size: 4.4em;
+        color: yellow;
+        transform: rotate(200deg);
+    }
+    100% {
+        font-size: 1.4em;
+        color: yellow;
+        transform: rotate(-300deg);
+    }
+}
+
